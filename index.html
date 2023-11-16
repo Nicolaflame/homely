@@ -3,7 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Homely</title>
   </head>
-  <body></body>
+  <body>
+    <div class="card calc-card">
+      <div class="home-price">
+        <label for=""> Home Price: </label>
+        <input type="number" placeholder="$" />
+      </div>
+      <div class="down-pmt">
+        <label for="">Down Payment:</label>
+        <input type="number" placeholder="$" />
+        <p>20%</p>
+      </div>
+      <div></div>
+      <div class="loan-term">
+        <label for="range">Loan Term:</label>
+        <input type="range" step="5" min="10" max="30" placeholder="30" />
+      </div>
+      <div class="int-rate">
+        <label for="number">Interest Rate:</label>
+        <input type="number" placeholder="7.75%" />
+      </div>
+      <div class="">
+        <button class="sub-btn">Submit</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="results">
+        <h1>Here is your mortgage breakdown</h1>
+        <h3>Calculated Monthly Payment:</h3>
+        <p>Principal & Interest: <a class="PnI">$2000</a></p>
+        <!-- element below is meant for property tax calculation by zip -->
+        <!-- <p>Property Tax: <a class="Prop-Tax">$2000</a></p> -->
+        <div class="PTD">
+          <label for="number">Property Tax</label>
+          <input type="text" placeholder="$" class="Prop-Tax" />
+        </div>
+        <h3>Total Monthly Payment:</h3>
+        <a class="mly-pmt">$2500</a>
+      </div>
+    </div>
+    <script src="mortgage.js"></script>
+  </body>
 </html>

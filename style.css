@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+}
+
+.card {
+  width: 90%;
+  max-width: 470px;
+  background-image: url(images/Money.png);
+
+  background: linear-gradient(90deg, rgba(0,153,201,0.5214460784313726) 20%, rgba(71,209,131,1) 44%, rgba(52,194,231,1) 76%)
+  color: #222;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+}
+.calc-card {
+  display: flex;
+  flex-direction: column;
+}
+.calc-card input {
+  width: 60px;
+  height: 20px;
+  border: 0.5px solid #222;
+  border-radius: 5px;
+  text-align: center;
+  text
+}
+.home-price {
+  padding: 1rem;
+}
+.home-price label{
+  font-size: ;
+}
+
+.calc-card button{
+  margin: 20px;
+  padding:  10px 20px;
+  background: #00feba;
+  border: 0.5px solid #222;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.calc-card button:hover{
+  border: 0.5px solid #222;
+  background: #222;
+  border-radius: 50px;
+}
